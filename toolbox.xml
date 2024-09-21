@@ -1,0 +1,16 @@
+<category name="Lists" colour="#38bdf8" css-icon="customIcon fas fa-list">
+    <label text="Lists"></label>
+
+    <block type="list_item_assign">
+        <value name="idx">
+            <shadow type="inline_text">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+        <value name="val">
+            <shadow type="inline_text">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+    </block>
+</category>
