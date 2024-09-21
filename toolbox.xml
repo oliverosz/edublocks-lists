@@ -3,7 +3,7 @@
 
     <block type="list_item_assign">
         <value name="idx">
-            <shadow type="inline_text">
+            <shadow type="inline_number">
                 <field name="value">0</field>
             </shadow>
         </value>
