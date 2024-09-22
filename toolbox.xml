@@ -1,5 +1,5 @@
-<category name="Lists" colour="#38bdf8" css-icon="customIcon fas fa-list">
-    <label text="Lists"></label>
+<category name="Lists (fixed)" colour="#38bdf8" css-icon="customIcon fas fa-list">
+    <label text="Lists (fixed)"></label>
 
     <block type="list_item_assign">
         <value name="idx">
@@ -8,6 +8,14 @@
             </shadow>
         </value>
         <value name="val">
+            <shadow type="inline_text">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="list_append_fixed">
+        <value name="list_append_arg">
             <shadow type="inline_text">
                 <field name="value">0</field>
             </shadow>
