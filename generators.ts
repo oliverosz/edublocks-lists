@@ -39,21 +39,21 @@ Blockly.Python['in_operator'] = function(block) {
     return [code, 0];
 };
 
-Blockly.Python['procedure_call'] = function(block) {
+Blockly.Python['function_call'] = function(block) {
     const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
     const args = Blockly.Python.valueToCode(block, 'parameters', 0);
-    const code = `${fn}(${args})\n`;
-    return code;
-};
-
-Blockly.Python['procedure_call_no_args'] = function(block) {
-    const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
-    const code = `${fn}()\n`;
-    return code;
+    const code = `${fn}(${args})`;
+    return [code, 0];
 };
 
 Blockly.Python['function_call_no_args'] = function(block) {
     const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
     const code = `${fn}()`;
     return [code, 0];
+};
+
+Blockly.Python['procedure_call_no_args'] = function(block) {
+    const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
+    const code = `${fn}()\n`;
+    return code;
 };

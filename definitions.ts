@@ -81,7 +81,7 @@ Blockly.Blocks['in_operator'] = {
     }
 };
 
-Blockly.Blocks['procedure_call'] = {
+Blockly.Blocks['function_call'] = {
     init: function() {
         this.appendDummyInput();
         this.appendValueInput("function_name")
@@ -93,8 +93,19 @@ Blockly.Blocks['procedure_call'] = {
         this.appendDummyInput()
             .appendField(")");
         this.setInputsInline(true);
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
+        this.setOutput(true, null);
+        this.setColour(functionsColor);
+    }
+};
+
+Blockly.Blocks['function_call_no_args'] = {
+    init: function() {
+        this.appendValueInput("function_name")
+            .setCheck(null);
+        this.appendDummyInput()
+            .appendField("()");
+        this.setInputsInline(true);
+        this.setOutput(true, null);
         this.setColour(functionsColor);
     }
 };
@@ -108,18 +119,6 @@ Blockly.Blocks['procedure_call_no_args'] = {
         this.setInputsInline(true);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(functionsColor);
-    }
-};
-
-Blockly.Blocks['function_call_no_args'] = {
-    init: function() {
-        this.appendValueInput("function_name")
-            .setCheck(null);
-        this.appendDummyInput()
-            .appendField("()");
-        this.setInputsInline(true);
-        this.setOutput(true, null);
         this.setColour(functionsColor);
     }
 };

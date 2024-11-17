@@ -56,7 +56,7 @@
         <value name="iterable"></value>
     </block>
 
-    <block type="procedure_call">
+    <block type="function_call">
         <value name="function_name">
             <shadow type="inline_text">
                 <field name="value">function_name</field>
@@ -74,7 +74,7 @@
         </value>
     </block>
 
-    <block type="procedure_call_no_args">
+    <block type="function_call_no_args">
         <value name="function_name">
             <shadow type="inline_text">
                 <field name="value">function_name</field>
@@ -82,7 +82,7 @@
         </value>
     </block>
 
-    <block type="function_call_no_args">
+    <block type="procedure_call_no_args">
         <value name="function_name">
             <shadow type="inline_text">
                 <field name="value">function_name</field>
