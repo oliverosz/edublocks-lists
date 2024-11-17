@@ -30,3 +30,22 @@ Blockly.Python['matrix_item_access'] = function(block) {
     const code = `${list_name}[${idx1}][${idx2}]`;
     return [code, 0];
 };
+
+Blockly.Python['procedure_call'] = function(block) {
+    const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
+    const args = Blockly.Python.valueToCode(block, 'parameters', 0);
+    const code = `${fn}(${args})\n`;
+    return code;
+};
+
+Blockly.Python['procedure_call_no_args'] = function(block) {
+    const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
+    const code = `${fn}()\n`;
+    return code;
+};
+
+Blockly.Python['function_call_no_args'] = function(block) {
+    const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
+    const code = `${fn}()`;
+    return [code, 0];
+};

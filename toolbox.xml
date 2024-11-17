@@ -46,4 +46,38 @@
             </shadow>
         </value>
     </block>
+
+    <block type="procedure_call">
+        <value name="function_name">
+            <shadow type="inline_text">
+                <field name="value">function_name</field>
+            </shadow>
+        </value>
+        <value name="parameters">
+            <shadow type="parameters">
+                <mutation color="#9aa429" items="1" limit="100" inputType="text" />
+                <value name="input_1">
+                    <shadow type="inline_text">
+                        <field name="value">params</field>
+                    </shadow>
+                </value>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="procedure_call_no_args">
+        <value name="function_name">
+            <shadow type="inline_text">
+                <field name="value">function_name</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="function_call_no_args">
+        <value name="function_name">
+            <shadow type="inline_text">
+                <field name="value">function_name</field>
+            </shadow>
+        </value>
+    </block>
 </category>

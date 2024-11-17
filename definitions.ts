@@ -1,4 +1,5 @@
 const listsColor = "#15bad4";
+const functionsColor = "#cdda36";
 
 Blockly.Blocks['list_create_empty'] = {
     init: function() {
@@ -62,5 +63,50 @@ Blockly.Blocks['matrix_item_access'] = {
         this.setInputsInline(true);
         this.setOutput(true, null);
         this.setColour(listsColor);
+    }
+};
+
+Blockly.Blocks['procedure_call'] = {
+    init: function() {
+        this.appendDummyInput();
+        this.appendValueInput("function_name")
+            .setCheck(null);
+        this.appendDummyInput()
+            .appendField("(");
+        this.appendValueInput("parameters")
+            .setCheck(null);
+        this.appendDummyInput()
+            .appendField(")");
+        this.setInputsInline(true);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(functionsColor);
+    }
+};
+
+Blockly.Blocks['procedure_call_no_args'] = {
+    init: function() {
+        this.appendDummyInput();
+        this.appendValueInput("function_name")
+            .setCheck(null);
+        this.appendDummyInput()
+            .appendField("()");
+        this.setInputsInline(true);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(functionsColor);
+    }
+};
+
+Blockly.Blocks['function_call_no_args'] = {
+    init: function() {
+        this.appendDummyInput();
+        this.appendValueInput("function_name")
+            .setCheck(null);
+        this.appendDummyInput()
+            .appendField("()");
+        this.setInputsInline(true);
+        this.setOutput(true, null);
+        this.setColour(functionsColor);
     }
 };
