@@ -45,15 +45,3 @@ Blockly.Python['function_call'] = function(block) {
     const code = `${fn}(${args})`;
     return [code, 0];
 };
-
-Blockly.Python['function_call_no_args'] = function(block) {
-    const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
-    const code = `${fn}()`;
-    return [code, 0];
-};
-
-Blockly.Python['procedure_call_no_args'] = function(block) {
-    const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
-    const code = `${fn}()\n`;
-    return code;
-};
