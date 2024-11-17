@@ -89,4 +89,6 @@
             </shadow>
         </value>
     </block>
+
+    <button text="Hide unused categories" callbackKey="hideCategories"></button>
 </category>
