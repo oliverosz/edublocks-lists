@@ -1,5 +1,5 @@
-<category name="Lists" colour="#38bdf8" css-icon="customIcon fas fa-list">
-    <label text="Lists"></label>
+<category name="Extras" colour="#e83c40" css-icon="customIcon fas fa-asterisk">
+    <label text="Extras"></label>
 
     <block type="list_create_empty"></block>
 
