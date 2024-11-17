@@ -13,4 +13,22 @@
             </shadow>
         </value>
     </block>
+
+    <block type="matrix_item_assign">
+        <value name="idx1">
+            <shadow type="inline_number">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+        <value name="idx2">
+            <shadow type="inline_number">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+        <value name="val">
+            <shadow type="inline_text">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+    </block>
 </category>
