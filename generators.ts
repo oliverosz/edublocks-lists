@@ -1,3 +1,9 @@
+Blockly.Python['list_create_empty'] = function(block) {
+    const list_name = Blockly.Python.nameDB_.getName(block.getFieldValue('list_name'), Blockly.VARIABLE_CATEGORY_NAME);
+    const code = `${list_name} = []\n`;
+    return code;
+};
+
 Blockly.Python['list_item_assign'] = function(block) {
     const list_name = Blockly.Python.nameDB_.getName(block.getFieldValue('list_name'), Blockly.VARIABLE_CATEGORY_NAME);
     const idx = Blockly.Python.valueToCode(block, 'idx', 0);

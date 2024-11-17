@@ -1,5 +1,16 @@
 const listsColor = "#15bad4";
 
+Blockly.Blocks['list_create_empty'] = {
+    init: function() {
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldVariable("variable_name"), "list_name")
+            .appendField("= []");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(listsColor);
+    }
+};
+
 Blockly.Blocks['list_item_assign'] = {
     init: function() {
         this.appendDummyInput()

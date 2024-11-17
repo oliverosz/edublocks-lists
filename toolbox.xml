@@ -1,6 +1,8 @@
 <category name="Lists" colour="#38bdf8" css-icon="customIcon fas fa-list">
     <label text="Lists"></label>
 
+    <block type="list_create_empty"></block>
+
     <block type="list_item_assign">
         <value name="idx">
             <shadow type="inline_number">
