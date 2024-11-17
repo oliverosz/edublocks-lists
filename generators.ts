@@ -31,6 +31,14 @@ Blockly.Python['matrix_item_access'] = function(block) {
     return [code, 0];
 };
 
+Blockly.Python['in_operator'] = function(block) {
+    const val = Blockly.Python.valueToCode(block, 'val', 0);
+    const op = block.getFieldValue('op');
+    const iter = Blockly.Python.valueToCode(block, 'iterable', 0);
+    const code = `${val} ${op} ${iter}`;
+    return [code, 0];
+};
+
 Blockly.Python['procedure_call'] = function(block) {
     const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
     const args = Blockly.Python.valueToCode(block, 'parameters', 0);

@@ -47,6 +47,15 @@
         </value>
     </block>
 
+    <block type="in_operator">
+        <value name="val">
+            <shadow type="inline_text">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+        <value name="iterable"></value>
+    </block>
+
     <block type="procedure_call">
         <value name="function_name">
             <shadow type="inline_text">

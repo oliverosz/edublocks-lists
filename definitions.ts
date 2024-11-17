@@ -1,5 +1,6 @@
 const listsColor = "#15bad4";
 const functionsColor = "#cdda36";
+const logicColor = "#49b04d";
 
 Blockly.Blocks['list_create_empty'] = {
     init: function() {
@@ -66,6 +67,20 @@ Blockly.Blocks['matrix_item_access'] = {
     }
 };
 
+Blockly.Blocks['in_operator'] = {
+    init: function() {
+        this.appendValueInput("val")
+            .setCheck(null);
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldDropdown([["in","in"], ["not in","not in"]]), "op");
+        this.appendValueInput("iterable")
+            .setCheck(null);
+        this.setInputsInline(true);
+        this.setOutput(true, null);
+        this.setColour(logicColor);
+    }
+};
+
 Blockly.Blocks['procedure_call'] = {
     init: function() {
         this.appendDummyInput();
@@ -86,7 +101,6 @@ Blockly.Blocks['procedure_call'] = {
 
 Blockly.Blocks['procedure_call_no_args'] = {
     init: function() {
-        this.appendDummyInput();
         this.appendValueInput("function_name")
             .setCheck(null);
         this.appendDummyInput()
@@ -100,7 +114,6 @@ Blockly.Blocks['procedure_call_no_args'] = {
 
 Blockly.Blocks['function_call_no_args'] = {
     init: function() {
-        this.appendDummyInput();
         this.appendValueInput("function_name")
             .setCheck(null);
         this.appendDummyInput()
