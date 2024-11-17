@@ -110,4 +110,14 @@ Blockly.Blocks['function_call_no_args'] = {
     }
 };
 
+var hideCategories = function(btn) {
+    const categories = Blockly.getMainWorkspace().getToolbox().getToolboxItems();
+    const to_remove = ["Turtle", "Graphs", "Requests"];
+    for (let i = 0; i < categories.length; i++) {
+        if (to_remove.includes(categories[i].name_)) {
+            categories[i].setVisible_(false);
+        }
+    }
+}
+
 Blockly.getMainWorkspace().registerButtonCallback("hideCategories", hideCategories);
