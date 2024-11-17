@@ -39,7 +39,7 @@ Blockly.Python['in_operator'] = function(block) {
     return [code, 0];
 };
 
-Blockly.Python['function_call'] = function(block) {
+Blockly.Python['value_function_call'] = function(block) {
     const fn = Blockly.Python.valueToCode(block, 'function_name', 0);
     const args = Blockly.Python.valueToCode(block, 'parameters', 0);
     const code = `${fn}(${args})`;

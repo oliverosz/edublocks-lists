@@ -56,7 +56,7 @@
         <value name="iterable"></value>
     </block>
 
-    <block type="function_call">
+    <block type="value_function_call">
         <value name="function_name">
             <shadow type="inline_text">
                 <field name="value">function_name</field>

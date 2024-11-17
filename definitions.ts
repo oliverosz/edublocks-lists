@@ -81,7 +81,7 @@ Blockly.Blocks['in_operator'] = {
     }
 };
 
-Blockly.Blocks['function_call'] = {
+Blockly.Blocks['value_function_call'] = {
     init: function() {
         this.appendDummyInput();
         this.appendValueInput("function_name")
