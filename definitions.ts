@@ -36,3 +36,20 @@ Blockly.Blocks['matrix_item_assign'] = {
         this.setColour(listsColor);
     }
 };
+
+Blockly.Blocks['matrix_item_access'] = {
+    init: function() {
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldVariable("variable_name"), "list_name")
+            .appendField("[");
+        this.appendValueInput("idx1");
+        this.appendDummyInput()
+            .appendField("][");
+        this.appendValueInput("idx2");
+        this.appendDummyInput()
+            .appendField("]");
+        this.setInputsInline(true);
+        this.setOutput(true, null);
+        this.setColour(listsColor);
+    }
+};

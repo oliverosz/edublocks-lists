@@ -31,4 +31,17 @@
             </shadow>
         </value>
     </block>
+
+    <block type="matrix_item_access">
+        <value name="idx1">
+            <shadow type="inline_number">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+        <value name="idx2">
+            <shadow type="inline_number">
+                <field name="value">0</field>
+            </shadow>
+        </value>
+    </block>
 </category>
