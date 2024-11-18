@@ -1,6 +1,6 @@
-const listsColor = "#15bad4";
-const functionsColor = "#cdda36";
-const logicColor = "#49b04d";
+var listsColor = "#15bad4";
+var functionsColor = "#cdda36";
+var logicColor = "#49b04d";
 
 Blockly.Blocks['list_create_empty'] = {
     init: function() {
